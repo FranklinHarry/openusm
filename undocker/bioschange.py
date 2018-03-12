@@ -1,3 +1,107 @@
+# python bioschange.py -n 100.98.24.60 -s /var/nfsshare -c biosconfig.xml -f ips.txt
+NFS_SERVER 100.98.24.60 -- NFS_SERVER_SHARE /var/nfsshare CONFIG_FILE ips.txt
+('Server ---- ', '10.148.0.1', '100.98.24.60', '/var/nfsshare', 'ips.txt')
+https://10.148.0.1/redfish/v1/Managers/iDRAC.Embedded.1/Actions/Oem/EID_674_Manager.ImportSystemConfiguration
+
+- Job ID successfully created
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: Importing Server Configuration Profile.
+
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: Importing Server Configuration Profile.
+
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: Importing Server Configuration Profile.
+
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: Importing Server Configuration Profile.
+
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: Importing Server Configuration Profile.
+
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: Importing Server Configuration Profile.
+
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: Importing Server Configuration Profile.
+
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: Importing Server Configuration Profile.
+
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: Importing Server Configuration Profile.
+
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: Importing Server Configuration Profile.
+
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: Importing Server Configuration Profile.
+
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: Importing Server Configuration Profile.
+
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: Importing Server Configuration Profile.
+
+
+- Query job ID command passed
+
+Job ID = JID_208872868698
+Name = Import Configuration
+Message = Unable to import the Server Configuration Profile from the network share.
+JobStatus = Completed
+
+JID_208872868698 completed in: 0:00:18
+('Server ---- ', '10.148.0.2', '100.98.24.60', '/var/nfsshare', 'ips.txt')
+https://10.148.0.2/redfish/v1/Managers/iDRAC.Embedded.1/Actions/Oem/EID_674_Manager.ImportSystemConfiguration
+
+- Job ID successfully created
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: New job.
+
+
+- Query job ID command passed
+- Job not marked completed, current status is: Running
+- Message: New job.
+
+
+- Query job ID command passed
+
+Job ID = JID_208675087637
+Name = Import Configuration
+Message = Unable to import the system configuration XML file from the network share.
+JobStatus = Completed
+
+JID_208675087637 completed in: 0:00:19
+[root@bright81 tester]# cat bioschange.py
 import os, requests, json, sys, re, time
 from datetime import datetime
 
@@ -40,7 +144,8 @@ def import_scp(idrac_ip,share_ip,share_name,file_name):
         response = requests.post(url, data=json.dumps(payload), headers=headers, verify=False,auth=('root','calvin'))
         if response.status_code != 202:
                 print "\n##### Command Failed, status code not 202\n, code is: %s" % response.status_code
-                sys.exit()
+                #sys.exit()
+                return
         else:
                 print "\n- Job ID successfully created"
                 response_output=response.__dict__
@@ -58,17 +163,20 @@ def import_scp(idrac_ip,share_ip,share_name,file_name):
                         print "\n- Query job ID command passed"
                 else:
                         print "Query job ID command failed, error code is: %s" % statusCode
-                        sys.exit()
+                        #sys.exit()
+                        return
                 if "failed" in data[u"Messages"] or "completed with errors" in data[u"Messages"]:
                         print "Job failed, current message is: %s" % data[u"Messages"]
-                        sys.exit()
+                        #sys.exit()
+                        return
                 elif data[u"TaskState"] == "Completed":
                         print "\nJob ID = "+data[u"Id"]
                         print "Name = "+data[u"Name"]
                         print "Message = "+message_string[0][u"Message"]
                         print "JobStatus = "+data[u"TaskState"]
                         print "\n%s completed in: %s" % (job_id, str(current_time)[0:7])
-                        sys.exit()
+                        #sys.exit()
+                        return
                 else:
                         print "- Job not marked completed, current status is: %s" % data[u"TaskState"]
                         print "- Message: %s\n" % message_string[0][u"Message"]
@@ -118,8 +226,8 @@ def main():
         server_ips = f.readlines()
 
         for server in server_ips:
-                print(server, share_ip, share_name, file_name)
-        #       import_scp(server.strip(), share_ip, share_name, config_file)
+                print("Server ---- ",server.strip(), share_ip.strip(), share_name, file_name)
+                import_scp(server.strip(), share_ip.strip(), share_name, config_file)
 
 
 
