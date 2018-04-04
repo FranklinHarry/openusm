@@ -98,7 +98,6 @@ case "$command" in
   up)             up $@ ;;
   down)           down $@ ;;
   logs)           logs $@ ;;
-  psi)            psi ;;
   provision_docker)      provision_docker $@ ;;
   provision_elk) provision_elk ;;
   *)        echo "Usage: <build|up|down|logs|psi|provision_docker|provision_elk>" ;;
