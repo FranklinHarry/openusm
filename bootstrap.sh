@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 prepare_ubuntu() {
@@ -67,24 +68,27 @@ build() {
 }
 
 up() {
-  #local name=${1:-openusm}
+  local name=${1:-openusm}
+
+
   echo "Starting services for $name ..."
-  docker-compose up -d
+
+
+    docker-compose -p $name up -d
 }
 
 down() {
-  #local name=${1:-openusm}
-  cd logging
-  #echo "Starting services for $name ..."
-  docker-compose down
+  local name=${1:-openusm}
+  echo "Starting services for $name ..."
+  docker-compose -p $name down
 }
 
 logs() {
-  #local name=${1:-openusm}
-  #shift
+#  local name=${1:-openusm}
+#  shift
   cd logging
   echo "Logs for $name ..."
-  docker-compose logs $@
+  docker-compose  logs $@
 }
 
 
