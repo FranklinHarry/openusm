@@ -57,7 +57,7 @@ provision_docker() {
 
 provision_elk() {
   # Install JRE (Only needed for running PSI locally)
-  cd openusm/logging
+  cd logging
   docker-compose up -d
   docker-compose ps
 }
