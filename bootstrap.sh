@@ -67,26 +67,24 @@ build() {
 }
 
 up() {
-  local name=${1:-openusm}
- 
-
+  #local name=${1:-openusm}
   echo "Starting services for $name ..."
-  
-
-    docker-compose -p $name up -d
+  docker-compose up -d
 }
 
 down() {
-  local name=${1:-openusm}
-  echo "Starting services for $name ..."
-  docker-compose -p $name down
+  #local name=${1:-openusm}
+  cd logging
+  #echo "Starting services for $name ..."
+  docker-compose down
 }
 
 logs() {
-  local name=${1:-openusm}
-  shift
+  #local name=${1:-openusm}
+  #shift
+  cd logging
   echo "Logs for $name ..."
-  docker-compose -p $name logs $@
+  docker-compose logs $@
 }
 
 
