@@ -39,10 +39,10 @@ OpenUSM uses "Container-Per-Server(CPS)" model. For each server management tasks
 
 To get started with OpenUSM, we have built bootstrapping scripts for you to keep it simple and quick. 
 
-# Installing Docker & Docker Compose
+## Installing Docker & Docker Compose
 
 
-## Cloning the Repository
+Cloning the Repository
 
 ``` 
 $git clone https://github.com/openusm/opensum
@@ -58,9 +58,9 @@ If you have Docker already installed on your system, you can skip this step. If 
 
 <a href="https://asciinema.org/a/D7Sy9ouLPWc3aWa5RVPKuMOaK" target="_blank"><img src="https://asciinema.org/a/D7Sy9ouLPWc3aWa5RVPKuMOaK.png" /></a>
 
-Manual Method:
+## Manual Method:
 
-## Preparing Your System
+Preparing Your System
 
 [Ubuntu](docs/os/ubuntu-installation.md) <br>
 [Debian](docs/os/debian-installation.md) <br>
