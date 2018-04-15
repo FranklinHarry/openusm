@@ -81,6 +81,8 @@ Just wait for 30-40 seconds to get ELK stack up and running.
 
 <a href="https://asciinema.org/a/cBXn0IBsmf97zoHZLI3Qtgl7B" target="_blank"><img src="https://asciinema.org/a/cBXn0IBsmf97zoHZLI3Qtgl7B.png" /></a>
 
+<a href="https://asciinema.org/a/AJzkQ1po7uozrM1ER7IZbY8ct" target="_blank"><img src="https://asciinema.org/a/AJzkQ1po7uozrM1ER7IZbY8ct.png" /></a>
+
 
 OpenUSM is a suite of tools and utilities which configures and manage the lifecycle of system management. OpenUSM has a capability to perform the following functions:
 
