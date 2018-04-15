@@ -37,12 +37,48 @@ OpenUSM uses "Container-Per-Server(CPS)" model. For each server management tasks
 
 # Getting Started with OpenUSM
 
+To get started with OpenUSM, we have built bootstrapping scripts for you to keep it simple and quick. 
+
+# Installing Docker & Docker Compose
+
+
+## Cloning the Repository
+
+``` 
+$git clone https://github.com/openusm/opensum
+```
+
+Bootstrapping Docker
+
+If you have Docker already installed on your system, you can skip this step. If not, run the below command to install Docker & Docker Compose on your system.
+
+ ```
+ $sh bootstrap.sh install_docker
+```
+
+<a href="https://asciinema.org/a/D7Sy9ouLPWc3aWa5RVPKuMOaK" target="_blank"><img src="https://asciinema.org/a/D7Sy9ouLPWc3aWa5RVPKuMOaK.png" /></a>
+
+Manual Method:
+
 ## Preparing Your System
 
 [Ubuntu](docs/os/ubuntu-installation.md) <br>
 [Debian](docs/os/debian-installation.md) <br>
 [CentOS](docs/os/centos-installation.md) <br>
 [RHEL](docs/os/rhel-installation.md) <br>
+
+# Bootstrapping Elastic Stack
+
+OpenUSM is 100% containerized solution and hence we will be running ELK inside Docker containers. To keep it simple, we designed a docker-compose file which can get you started in a matter of seconds. 
+
+Execute the same bootstrap file with provision-elk argument to bring up ELK stack as shown below:
+
+ ```
+ $sh bootstrap.sh provision_elk
+```
+
+Just wait for 30-40 seconds to get ELK stack up and running.
+
 
 OpenUSM is a suite of tools and utilities which configures and manage the lifecycle of system management. OpenUSM has a capability to perform the following functions:
 
