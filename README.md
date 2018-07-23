@@ -56,7 +56,7 @@ If you have Docker already installed on your system, you can skip this step. If 
  $sh bootstrap.sh install_docker
 ```
 
-Ensure that ```curl```package is already installed on the system.
+Ensure that ```curl```package is already installed on this system.
 
 <a href="https://asciinema.org/a/D7Sy9ouLPWc3aWa5RVPKuMOaK" target="_blank"><img src="https://asciinema.org/a/D7Sy9ouLPWc3aWa5RVPKuMOaK.png" /></a>
 
