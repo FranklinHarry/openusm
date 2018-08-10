@@ -73,6 +73,12 @@ Preparing Your System
 
 OpenUSM is 100% containerized solution and hence we will be running ELK inside Docker containers. To keep it simple, we designed a docker-compose file which can get you started in a matter of seconds. 
 
+Before you initiate ELK stack , ensure that you set the vm.max_map_count kernel setting needs to be set to at least 262144 for Linux system
+
+```
+sudo sysctl -w vm.max_map_count=262144
+```
+
 Execute the same bootstrap file with provision-elk argument to bring up ELK stack as shown below:
 
  ```
