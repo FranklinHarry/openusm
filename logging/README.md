@@ -51,6 +51,26 @@ $ chcon -R system_u:object_r:admin_home_t:s0 docker-elk/
 
 ### Bringing up the stack
 
+### Pre-requisite:
+
+Ensure that the below syslog driver has been specified:
+
+
+```
+cat /etc/docker/daemon.json
+{
+  "log-driver": "syslog"
+}
+root@ubuntu:~#
+
+```
+
+Restart the docker daemon(in case of Ubuntu)
+
+```
+service docker restart
+```
+
 Building the Elastic Stack first:
 
 ```bash
