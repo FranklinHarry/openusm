@@ -63,10 +63,16 @@ Click on Discovery option on the left side to view the logs.
 
 ## Visualization through Kibana UI
 
+## Search Index Pattern(lc_index)
+<br>
 
 ![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter1.png)<br>
 
+## Click Next 
+
 ![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter2.png)<br>
+
+### 
 
 ![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter3.png)<br>
 
