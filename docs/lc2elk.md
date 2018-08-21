@@ -68,24 +68,40 @@ Click on Discovery option on the left side to view the logs.
 
 ![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter1.png)<br>
 
-## Click Next 
+## Click Next for Step 2
 
 ![alt text](https://github.com/openusm/openusm/blob/master/images/logextporter2.png)<br>
 
-### 
+## Configuring Time Filter Settings
+<br>
+<br>
 
 ![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter3.png)<br>
+<br>
+<br>
+
+## Listing Fields under Index Pattern
 
 ![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter4.png)<br>
+<br>
+<br>
+
 
 ![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter5.png)<br>
+<br>
+<br>
 
 ![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter6.png)<br>
+<br>
+<br>
 
 ![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter7.png)<br>
+<br>
+<br>
 
-![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter8.png)<br>
+## Displaying Pie-Chart
 
-![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter8.png)<br>
 
 ![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter11.png)<br>
+<br>
+<br>
