@@ -39,6 +39,11 @@ OpenUSM uses "Container-Per-Server(CPS)" model. For each server management tasks
 
 To get started with OpenUSM, we have built bootstrapping scripts for you to keep it simple and quick. 
 
+Pre-requisite:
+
+- Install Python on Linux System
+- Ensure that you have enough space for containers to run(recommended 10GB of space)
+
 ## Installing Docker & Docker Compose
 
 
