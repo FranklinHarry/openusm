@@ -85,3 +85,7 @@ Click on Discovery option on the left side to view the logs.
 ![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter7.png)<br>
 
 ![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter8.png)<br>
+
+![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter8.png)<br>
+
+![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter11.png)<br>
