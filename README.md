@@ -117,7 +117,7 @@ OpenUSM is a suite of tools and utilities which configures and manage the lifecy
 [BIOS Token Change](docs/bios-token.md) <br>
 [Firmware Update](docs/firmware.md)<br>
 [Pushing iDRAC Logs to ELK Stack](docs/idrac2elk.md)<br>
-[Pushing LC logs to ELK Stack]()<br>
+[Pushing LC logs to ELK Stack](docs/lc2elk.md)<br>
 [Pushing Sensors Logs to ELK Stack]()<br>
 
 
