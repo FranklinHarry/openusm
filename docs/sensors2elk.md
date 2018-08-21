@@ -65,11 +65,10 @@ Click on Discovery option on the left side to view the logs.
 
 ## Search Index Pattern(fan_index)
 <br>
-<br>
+
 ![alt text](https://github.com/openusm/openusm/blob/master/images/fan1.png)<br>
 
 
-<br>
-<br>
+
 ![alt text](https://github.com/openusm/openusm/blob/master/images/fan2.png)<br>
 <br>
