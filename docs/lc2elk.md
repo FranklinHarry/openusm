@@ -40,7 +40,6 @@ service docker restart
 
 ```
 sh bootstrap.sh provision_elk
-
 ```
 
 Verify the Kibana UI by opening ```http://<IP>:5601``` under the browser.
@@ -49,6 +48,7 @@ You can also verify using the below commands:
 ```
 curl <HOSTIP>:9200
 curl <HOSTIP>:5601
+```
 
 ## Sending LC logs to ELK Stack
 
@@ -70,4 +70,12 @@ Click on Discovery option on the left side to view the logs.
 
 ![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter3.png)<br>
 
-![openusm](https://github.com/openusm/openusm/blob/master/images/lclogexporter4.png)<br>
+![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter4.png)<br>
+
+![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter5.png)<br>
+
+![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter6.png)<br>
+
+![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter7.png)<br>
+
+![alt text](https://github.com/openusm/openusm/blob/master/images/lclogexporter8.png)<br>
