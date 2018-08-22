@@ -1,4 +1,4 @@
-# How to send DellEMC Sensor logs to ELK Stack
+# Sending DellEMC Hardware Sensor logs to ELK Stack Made Easy
 
 ## Pre-requisite:
 
