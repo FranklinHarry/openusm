@@ -1,4 +1,4 @@
-# Sending DellEMC Hardware Sensor logs to ELK Stack Made Easy
+# Sending DellEMC Hardware Sensor logs to ELK Stack Made Easy using Docker & Redfish
 
 ## Pre-requisite:
 
