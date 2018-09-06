@@ -50,7 +50,7 @@ Pre-requisite:
 Cloning the Repository
 
 ``` 
-$git clone https://github.com/openusm/opensum
+$git clone https://github.com/openusm/openusm
 ```
 
 Bootstrapping Docker
